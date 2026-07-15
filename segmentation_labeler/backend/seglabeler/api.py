@@ -38,7 +38,7 @@ from .schemas import (
 
 def _default_workspace() -> Path:
     configured = os.environ.get("SEGMENTATION_LABELER_WORKSPACE")
-    return Path(configured).expanduser() if configured else Path.home() / ".segmentation_labeler"
+    return Path(configured).expanduser() if configured else Path("/mnt/scratch2/users/mmohseni/projects/MaskForge/segmentation_labeler/.segmentation_labeler")
 
 
 def _http_error(exc: Exception) -> HTTPException:

@@ -8,7 +8,7 @@
 # streamlit run app.py
 
 
-cd /mnt/scratch2/users/mmohseni/projects/medsam3/segmentation_labeler
+cd segmentation_labeler
 uv sync --dev
 npm --prefix frontend install
 make run
