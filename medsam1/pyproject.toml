@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medsam-prompt"
+version = "0.1.0"
+description = "Prompt-guided MedSAM Streamlit application"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "gdown>=5.2,<6",
+  "numpy>=1.26,<3",
+  "Pillow>=10,<12",
+  "scikit-image>=0.22,<1",
+  "streamlit>=1.45,<2",
+  "streamlit-drawable-canvas>=0.9,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,96 @@
+# Local environments and package installations
+.venv/
+**/.venv/
+.venv
+**/.venv
+node_modules/
+**/node_modules/
+
+# Python caches and tooling
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+**/.pytest_cache/
+.ruff_cache/
+**/.ruff_cache/
+.mypy_cache/
+**/.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
+**/*.egg-info/
+
+# Frontend build and test artifacts
+dist/
+**/dist/
+coverage/
+**/coverage/
+test-results/
+**/test-results/
+playwright-report/
+**/playwright-report/
+
+# Results, runs, exports, and logs
+result/
+results/
+**/result/
+**/results/
+output/
+outputs/
+**/output/
+**/outputs/
+runs/
+**/runs/
+exports/
+**/exports/
+logs/
+**/logs/
+*.log
+
+# Model checkpoints and downloaded upstream repositories
+checkpoint/
+checkpoints/
+**/checkpoint/
+**/checkpoints/
+**/checkpoint-*/
+**/*checkpoint*/
+**/third_party/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+
+# Downloaded or sensitive datasets/images
+data/
+datasets/
+sample_data/
+**/data/
+**/datasets/
+**/sample_data/
+
+# Local application state and databases
+*.sqlite
+*.sqlite3
+*.db
+.segmentation_labeler/
+
+# Secrets and machine-local configuration
+.env
+.env.local
+.env.*.local
+!.env.example
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+
+# Workspace/editor metadata
+.agents/
+.codex/
+.idea/
+.vscode/
+.DS_Store
+
+# Archived local snapshots
+archive/

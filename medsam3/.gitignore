@@ -1,0 +1,23 @@
+# Python and local environments
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration and credentials
+.env
+.streamlit/secrets.toml
+
+# Third-party code, model weights, downloads, and generated artefacts
+third_party/
+checkpoints/
+sample_data/wseg/
+outputs/
+logs/
+
+# OS/editor artefacts
+.DS_Store
+.vscode/
+.idea/

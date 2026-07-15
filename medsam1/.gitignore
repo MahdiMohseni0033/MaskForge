@@ -1,0 +1,20 @@
+# Local environments, source checkouts, checkpoints, samples, and outputs
+.venv/
+third_party/
+checkpoints/
+sample_data/
+outputs/
+logs/
+
+# Python tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Local configuration and editor files
+.env
+.streamlit/secrets.toml
+.vscode/
+.idea/
+.DS_Store

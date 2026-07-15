@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sam3-streamlit"
+version = "0.1.0"
+description = "Streamlit interface for official SAM 3 rectangle-guided inference"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "einops>=0.8,<1",
+  "numpy>=1.26,<2",
+  "Pillow>=10,<13",
+  "psutil>=6,<8",
+  "pycocotools>=2.0.7,<3",
+  "setuptools>=68,<81",
+  "streamlit>=1.45,<2",
+  "streamlit-drawable-canvas>=0.9,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
